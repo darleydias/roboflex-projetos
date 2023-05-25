@@ -4,13 +4,11 @@
 ##############################################
 
 ## INSTALANDO BANCO
-———————————
 
 sudo apt install mariadb-server
 sudo mysql_secure_installation
 
 ## CRIANDO USUARIO
-——————————
 
 sudo mysql
 grant all privileges on . to 'roboflex'@'%' identified by 'Roboflex()123';
@@ -18,7 +16,6 @@ flush privileges;
 exit
 
 ## CONFIGURANDO ACESSO REMOTO 
-------------------------------------
 
 sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 
@@ -37,7 +34,7 @@ Comando parar maria db dentro do conteiner docker: sudo /etc/init.d/mariadb stop
 Docker estava dando um pau horrivel, sempre retornava: docker: Error response from daemon: Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io: Temporary failure in name resolution.
 See 'docker run --help'
 
-Solução:
+### Solução:
 
 Editei 345  sudo nano /etc/resolv.conf
 acrescentei nameserver 8.8.8.8
@@ -184,30 +181,24 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 FLUTTER
 #######################################################
 
-Ao rodar ‘flutter doctor’ Estava dando erro 
-
+### Ao rodar ‘flutter doctor’ Estava dando erro 
 
 Faltava instalar no sdkmanager:
 
-
-Outro defeito: falava que não tinha licença:
+###Outro defeito: falava que não tinha licença:
 
 flutter doctor  --android-license
 
-
-Criando Projeto:
+###Criando Projeto:
 
  flutter create catena
  cd catena
  code . 
  flutter run
-
-
+ 
 Extensão code runner
 
 ctrl+alt+N ou M
-
-
 
 ## binário que verifica nulidade dentro do jsx:
 ---------------------------------------
