@@ -1,5 +1,22 @@
 # Primeira atividade
 
+## Instalação Android Studio
+
+Pelo Ubuntu Software
+
+## Criação emulador 
+
+Pixel 3a
+
+## Instalaçlão do Flutter
+
+sudo snap install flutter --classic
+
+## Local de isntalçaão do SDK
+
+/home/darley/snap/flutter/common/flutter
+
+
 ## Criando Projeto 
 
 ~~~ 
