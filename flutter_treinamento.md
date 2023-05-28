@@ -60,3 +60,11 @@ Em cima do metodo runApp tem um link run
 
 ### 3) Canto Superiro direito, seta pra baixo run whithout debug 
 
+## Executando no próprio smattphone
+
+Estudar a depuração USB do seu dispositivo
+Reinicial o VSCode
+
+
+
+
