@@ -38,5 +38,19 @@ Extensão code runner
 
 ctrl+alt+N ou M
 
+### Executando projeto dentro do VSCode. Dentro do VSCode, no arquivo main faço ctr+F5
+
+Quando fiz isso deu:
+The current Dart SDK version is 2.18.5.
+
+Because perguntas requires SDK version >=3.0.2 <4.0.0, version solving failed.
+pub get failed (1; Because perguntas requires SDK version >=3.0.2 <4.0.0, version solving failed.)
+Exited (1)
+
+Então fiz:
+
+~~~
+flutter upgrade --force
+~~~
 
 
