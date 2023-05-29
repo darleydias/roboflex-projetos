@@ -27,7 +27,7 @@ Reinicia o banco
 
 sudo systemctl restart mariadb
 
-Comando parar maria db dentro do conteiner docker: sudo /etc/init.d/mariadb stop
+Comando para parar mariadb, dentro do conteiner docker: sudo /etc/init.d/mariadb stop
 
 ## ERRO NO DOCKER
 
@@ -36,7 +36,7 @@ See 'docker run --help'
 
 ### Solução:
 
-Editei 345  sudo nano /etc/resolv.conf
+Editei : sudo nano /etc/resolv.conf
 acrescentei nameserver 8.8.8.8
 sudo systemctl daemon-reload
 sudo systemctl restart docker
@@ -51,6 +51,7 @@ sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
      Bind-address 0.0.0.0
 
 Para entrar em um conteriner e atuar no terminal:
+
 sudo docker exec -t -i dbProd bash
 
 ##############################################
@@ -63,7 +64,7 @@ senha Cat
 
 
 ##############################################
-# SERVIDOR DE BANCO DE APLICACAO - ROBOFLEX 
+# SERVIDOR  DE APLICACAO - ROBOFLEX 
 ##############################################
 
 ## Instalaçao DOCKER
