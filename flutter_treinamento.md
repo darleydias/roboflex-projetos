@@ -75,6 +75,7 @@ Pasta Test - pode excluir
 Pasta pubspec.yami - configuração do sistema 
 
 ctr+alt+n executa um programa dart, independente de flutter. Tem que ter o plugin code runner instalado O arquivo tem que estar salvo
+ctr+d troca uma variável e todas iguais
 
 
 
