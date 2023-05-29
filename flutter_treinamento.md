@@ -65,6 +65,17 @@ Em cima do metodo runApp tem um link run
 Estudar a depuração USB do seu dispositivo
 Reinicial o VSCode
 
+## Estrutura do Projeto
+Pasta dart_toos - Colocar no git.ignore
+Pasta Idea - Colocar no git.ignore
+Pasta Android - pode ser aberta no Android Stúdio
+Pasta buid - contem o compilado
+Pasta lib - onde estará nosso código
+Pasta Test - pode excluir
+Pasta pubspec.yami - configuração do sistema 
+
+ctr+alt+n executa um programa dart, independente de flutter. Tem que ter o plugin code runner instalado O arquivo tem que estar salvo
+
 
 
 
