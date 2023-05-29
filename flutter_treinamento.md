@@ -78,5 +78,10 @@ ctr+alt+n executa um programa dart, independente de flutter. Tem que ter o plugi
 ctr+d troca uma variável e todas iguais
 
 
+# Construindo o primeiro Widget
+
+Para indicar um componente e buscar ações como envolver com outro (wraper) uso ctr + .
+
+
 
 
