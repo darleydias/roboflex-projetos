@@ -92,7 +92,7 @@ entrando: sudo docker exec -it sgiApl bash
 
 acessando php.ini
 
-nano /etc/php/8.8/fpm/php.ini
+nano /etc/php/8.1/fpm/php.ini
 
 modificar linha : display_errors = on
 
