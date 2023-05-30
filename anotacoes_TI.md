@@ -89,11 +89,17 @@ docker start sgiApl
 /usr/share/nginx/html
 ### Configurando o nginx para exibir erros php
 entrando: sudo docker exec -it sgiApl bash
+
 acessando php.ini
+
 nano /etc/php/8.8/fpm/php.ini
+
 modificar linha : display_errors = on
+
 exit
+
 docker stop sgiApl
+
 docker start sgiApl
 
 ##############################################
