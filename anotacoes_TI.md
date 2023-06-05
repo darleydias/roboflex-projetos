@@ -2064,6 +2064,11 @@ Já nos arquivos que consomem os códigos temos que dizer onde começa e acaba o
 <h2>Cumprimento de mandado de Busca e apreensão</h2>
 {% endblock%}
 
+APP_SECRET
+7df9314934dc2b5d12e3e6768384c6fb
+APP_KEY
+1414493470
+
 
 
 
