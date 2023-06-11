@@ -1146,7 +1146,7 @@ mudei configuracao /settings.py
 ### git clone https://github.com/laradock/laradock.git
 ### cp .env.example .env
 ### Instalando o Docker-compose
-### sudo curl -L https://github.com/docker/compose/releases/download/1.25.3/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+### sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ### sudo chmod +x /usr/local/bin/docker-compose
 ### docker-compose up -d nginx mysql phpmyadmin
 ### Dentro da pasta root (Dev) criar uma pasta public e dentro dela um arquivo php de teste
