@@ -163,7 +163,7 @@ services:
  
  
  #####################################
- CRIANDO MAQUINA COM NGINX PHP E MYSQL COM DOCKER-COMPOSE
+ ## CRIANDO MAQUINA COM NGINX PHP E MYSQL COM DOCKER-COMPOSE
  #####################################
 ### 1) Crio uma pasta
 ### 2) dentro dela colcoquei tres asquivos
