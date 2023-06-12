@@ -241,6 +241,10 @@ DB_PASSWORD=pass
 ~~~
 ## Ai rodei docker-compose up -d
 
+## Meu documenroot ficou assim:
+### Local .
+### No container /var/www
+
 ######################################
 # COMANDOS GIT
 ##############################################
