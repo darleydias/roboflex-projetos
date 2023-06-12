@@ -138,17 +138,27 @@ docker start sgiApl
  ##############################################
  ### Instalando o docker
  ###############################################
- 1977  echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
- 1978    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
- 1979  sudo apt-get update
- 1980  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
- 1981  sudo apt-get install ca-certificates curl gnupg
- 1982  sudo apt autoremove
- 1983  sudo install -m 0755 -d /etc/apt/keyrings
- 1984  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
- 1985  sudo chmod a+r /etc/apt/keyrings/docker.gpg
- 1986  sudo apt-get update
- 1987  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+ 
+   echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+     "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+     
+   sudo apt-get update
+   
+   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   
+   sudo apt-get install ca-certificates curl gnupg
+   
+   sudo apt autoremove
+   
+   sudo install -m 0755 -d /etc/apt/keyrings
+   
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   
+   sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   
+   sudo apt-get update
+   
+   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
  
  
  1994  docker-compose up -d
