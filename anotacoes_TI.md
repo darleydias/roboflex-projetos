@@ -105,12 +105,16 @@ docker start sgiApl
 ##############################################
 # DOCKER COMPOSE
 ##############################################
-
- 1970  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
- 1971  docker-compose --version
- 1972  mkdir app
- 1973  sudo mkdir app
- 1974  sudo nano app/index.html
+ sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+ 
+   docker-compose --version
+ 
+   mkdir app
+ 
+   sudo mkdir app
+ 
+   sudo nano app/index.html
+ 
  ~~~html
  <!doctype html>
 <html lang="en">
@@ -127,8 +131,10 @@ docker start sgiApl
 </body>
 </html> 
  ~~~
- 1975  sudo nano docker-compose.yml
- 1976  docker-compose up -d
+   sudo nano docker-compose.yml
+   
+   docker-compose up -d
+   
  ##############################################
  ### Instalando o docker
  ###############################################
