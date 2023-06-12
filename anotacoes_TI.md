@@ -135,35 +135,7 @@ docker start sgiApl
    sudo nano docker-compose.yml
    
    docker-compose up -d
-   
- ##############################################
- ### Instalando o docker
- ###############################################
- 
-   echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-     "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-     
-   sudo apt-get update
-   
-   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-   
-   sudo apt-get install ca-certificates curl gnupg
-   
-   sudo apt autoremove
-   
-   sudo install -m 0755 -d /etc/apt/keyrings
-   
-   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-   
-   sudo chmod a+r /etc/apt/keyrings/docker.gpg
-   
-   sudo apt-get update
-   
-   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
- 
- 
- 1994  docker-compose up -d
- 2008  sudo nano docker-compose.yml 
+sudo nano docker-compose.yml 
  ~~~xml
 version: '3.7'
 services:
@@ -175,8 +147,8 @@ services:
       - ./app:/usr/share/nginx/html
 ~~~
  #### DEU UMA ERRO QUE FOI RESOLVIDO COM 
- 2018  sudo chown $USER /var/run/docker.sock
- 2020  docker-compose ps
+   sudo chown $USER /var/run/docker.sock
+   docker-compose ps
  
  
  #####################################
