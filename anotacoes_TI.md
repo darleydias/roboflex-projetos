@@ -103,7 +103,7 @@ docker stop sgiApl
 docker start sgiApl
 
 ##############################################
-DOCKER COMPOSE
+# DOCKER COMPOSE
 ##############################################
 
  1970  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -111,8 +111,27 @@ DOCKER COMPOSE
  1972  mkdir app
  1973  sudo mkdir app
  1974  sudo nano app/index.html
+ ~~~html
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Docker Compose Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+</head>
+<body>
+
+	<h1>This is a Docker Compose Demo Page.</h1>
+	<p>This content is being served by an Nginx container.</p>
+
+</body>
+</html> 
+ ~~~
  1975  sudo nano docker-compose.yml
  1976  docker-compose up -d
+ ##############################################
+ ### Instalando o docker
+ ###############################################
  1977  echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
  1978    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
  1979  sudo apt-get update
@@ -124,8 +143,20 @@ DOCKER COMPOSE
  1985  sudo chmod a+r /etc/apt/keyrings/docker.gpg
  1986  sudo apt-get update
  1987  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+ 
+ 
  1994  docker-compose up -d
  2008  sudo nano docker-compose.yml 
+ ~~~xml
+version: '3.7'
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8000:80"
+    volumes:
+      - ./app:/usr/share/nginx/html
+~~~
  #### DEU UMA ERRO QUE FOI RESOLVIDO COM 
  2018  sudo chown $USER /var/run/docker.sock
  2020  docker-compose ps
@@ -150,6 +181,7 @@ sudo git push -u origin main
 ## ---------------
 ## Extensões do VSCode para docker:
 ## Docker e Docker Explorer
+
 ## Instalaçao DOCKER
 
 ### sudo apt-get update
