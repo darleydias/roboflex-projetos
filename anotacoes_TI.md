@@ -160,6 +160,86 @@ services:
  #### DEU UMA ERRO QUE FOI RESOLVIDO COM 
  2018  sudo chown $USER /var/run/docker.sock
  2020  docker-compose ps
+ 
+ 
+ #####################################
+ CRIANDO MAQUINA COM NGINX PHP E MYSQL COM DOCKER-COMPOSE
+ #####################################
+### 1) Crio uma pasta
+### 2) dentro dela colcoquei tres asquivos
+#### A) Dockerfile
+~~~xml
+FROM php:8.0.0rc1-fpm
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y git
+
+# Install PHP extensions
+RUN docker-php-ext-install pdo_mysql
+
+# Get latest Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Set working directory
+WORKDIR /var/www
+~~~
+### B) docker-compose 
+~~~xml
+version: "3.8"
+services:
+
+    # PHP service
+    app:
+        build: .
+        container_name: php-app
+        working_dir: /var/www/
+        volumes:
+            - ./:/var/www
+        networks:
+            - app-network
+
+    # MySQL database service
+    db:
+        image: mysql:5.7
+        container_name: mysql-db
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+        env_file:
+            - ./.env
+        networks:
+            - app-network
+
+    # Nginx service
+    nginx:
+        image: nginx:alpine
+        container_name: php-nginx
+        ports:
+            - 8000:80
+        volumes:
+            - ./:/var/www
+            - ./nginx/conf.d/:/etc/nginx/conf.d/
+        networks:
+            - app-network
+
+networks:
+    app-network:
+        driver: bridge
+~~~
+### C) .env
+~~~bash
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=database
+DB_USERNAME=user
+DB_PASSWORD=pass
+~~~
+## Ai rodei docker-compose up -d
 
 ######################################
 # COMANDOS GIT
