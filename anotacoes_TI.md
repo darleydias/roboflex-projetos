@@ -103,7 +103,35 @@ docker stop sgiApl
 docker start sgiApl
 
 ##############################################
-# COMANDOS GUIT
+DOCKER COMPOSE
+##############################################
+
+ 1970  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+ 1971  docker-compose --version
+ 1972  mkdir app
+ 1973  sudo mkdir app
+ 1974  sudo nano app/index.html
+ 1975  sudo nano docker-compose.yml
+ 1976  docker-compose up -d
+ 1977  echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+ 1978    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ 1979  sudo apt-get update
+ 1980  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+ 1981  sudo apt-get install ca-certificates curl gnupg
+ 1982  sudo apt autoremove
+ 1983  sudo install -m 0755 -d /etc/apt/keyrings
+ 1984  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+ 1985  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+ 1986  sudo apt-get update
+ 1987  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+ 1994  docker-compose up -d
+ 2008  sudo nano docker-compose.yml 
+ #### DEU UMA ERRO QUE FOI RESOLVIDO COM 
+ 2018  sudo chown $USER /var/run/docker.sock
+ 2020  docker-compose ps
+
+######################################
+# COMANDOS GIT
 ##############################################
 
 ### git add index.html package.json package-lock.json README.md webpack.config.js src/
