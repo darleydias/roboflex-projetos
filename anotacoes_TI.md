@@ -1,3 +1,63 @@
+#################################################
+#Instalando PHP básico com nginx
+#################################################
+
+### find linux
+~~~bash
+updatedb
+locate php.ini
+~~~
+## Instalando
+~~~bash
+apt-get update
+apt-get install nginx
+nano /etc/nginx/nginx.conf 
+service nginx restart
+apt-get install php-fpm
+apt-get install php-mysql php-mbstring php-xml php-gd php-curl php-bcmath php-ldap mlocate
+updatedb
+locate php.ini
+nano /etc/php/8.1/cli/php.ini 
+~~~
+Arquivo
+~~~bash
+max_execution_time = 300
+memory_limit = 256M
+post_max_size = 32M
+upload_max_filesize = 32M
+max_input_time = 300
+date.timezone = America/Sao_Paulo
+~~~
+service nginx restart
+nano /etc/nginx/sites-available/default
+
+~~~bash
+max_execution_time = 300
+memory_limit = 256M
+post_max_size = 32Mserver {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+        # modsecurity on;
+        # modsecurity_rules_file /etc/nginx/modsec/main.conf;
+        root /var/www/html;
+        index index.php index.html index.htm index.nginx-debian.html;
+        server_name _;
+        location / {
+                try_files $uri $uri/ =404;
+        }
+        location ~ .php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php-fpm.sock;
+        }
+}
+~~~
+Testando seo arquivo default está correto
+~~~bash
+nginx -t
+~~~
+service php8.1-fpm restart
+service nginx restart
+
 
 ##############################################
 # SERVIDOR DE BANCO DE DADOS - ROBOFLEX 
