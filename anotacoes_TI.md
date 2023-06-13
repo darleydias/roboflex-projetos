@@ -19,7 +19,7 @@ updatedb
 locate php.ini
 nano /etc/php/8.1/cli/php.ini 
 ~~~
-Arquivo
+Alterando p arquivo php.ini
 ~~~bash
 max_execution_time = 300
 memory_limit = 256M
