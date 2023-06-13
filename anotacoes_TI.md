@@ -1,7 +1,5 @@
 #################################################
-
-#Instalando PHP básico com nginx
-
+# Instalando PHP básico com nginx
 #################################################
 
 ### find linux
