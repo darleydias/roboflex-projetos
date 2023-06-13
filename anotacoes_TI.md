@@ -57,6 +57,7 @@ Testando seo arquivo default está correto
 nginx -t
 ~~~
 service php8.1-fpm restart
+
 service nginx restart
 #### Exibindo erros
 
