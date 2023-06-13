@@ -29,6 +29,7 @@ max_input_time = 300
 date.timezone = America/Sao_Paulo
 ~~~
 service nginx restart
+
 nano /etc/nginx/sites-available/default
 
 ~~~bash
@@ -66,6 +67,7 @@ service nginx restart
 ## INSTALANDO BANCO
 
 sudo apt install mariadb-server
+
 sudo mysql_secure_installation
 
 ## CRIANDO USUARIO
