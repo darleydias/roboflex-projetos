@@ -58,6 +58,13 @@ nginx -t
 ~~~
 service php8.1-fpm restart
 service nginx restart
+#### Exibindo erros
+
+~~~bash
+nano /etc/php/8.1/fpm/php.ini
+~~~
+modificar linha : display_errors = on
+
 
 
 ##############################################
