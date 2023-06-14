@@ -128,9 +128,20 @@ sudo docker exec -t -i dbProd bash
 ## ACEESSO SERVIDOR ROBOFLEX
 ##############################################
 ssh catena@192.168.0.112
+
 senha Cate
+
 sudo su
+
 senha Cat
+
+Entrando no container
+~~~bash
+sudo docker exec -it 481c51e18a30 bash
+~~~
+Entrando no DocumentRoot:
+
+cd /usr/share/nginx/html
 
 
 ##############################################
