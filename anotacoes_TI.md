@@ -12,7 +12,7 @@ locate php.ini
 apt-get update
 apt-get install nginx
 nano /etc/nginx/nginx.conf 
-service nginx restart
+service nginx restart (deu um pau porque estava com algo na porta 80. Dai fiz: sudo fuser -k 80/tcp)
 apt-get install php-fpm
 apt-get install php-mysql php-mbstring php-xml php-gd php-curl php-bcmath php-ldap mlocate
 updatedb
