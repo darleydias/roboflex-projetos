@@ -320,12 +320,20 @@ DB_PASSWORD=pass
 ##############################################
 
 ### git add index.html package.json package-lock.json README.md webpack.config.js src/
+
 git status
+
 sudo git commit -m "versaoBeta-1"
+
 sudo git remote -v
+
 sudo git branch -M main
+
 sudo git branch -M main
+
 sudo git remote add origin https://github.com/darleydias/cadeia.git
+
+
 sudo git push -u origin main
 
 ##############################################
