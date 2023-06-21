@@ -1436,14 +1436,14 @@ php artisan make:model Caso -m
 Editando o arquivo de migrations:
 --------------------------------
 Adicionei dois campos na function Up do arquivo migrations (nome do caso e titular)
-
+~~~bash
 Schema::create('casos', function (Blueprint $table) {
             $table->id();
             $table->String('nomeCaso')->unique();
             $table->String('titular');
             $table->timestamps();
         });
-
+~~~
 
 Definindo valor padrão para campo de string
 -------------------------------------------
