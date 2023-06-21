@@ -1,0 +1,3 @@
+ sudo apt install composer
+ composer create-project laravel/laravel injecao
+ sudo php artisan serve
