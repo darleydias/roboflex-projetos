@@ -3,10 +3,15 @@
 sudo apt install composer
 composer create-project laravel/laravel injecao
 sudo php artisan serve
+
 ~~~
-### Criando as yabelas pelos migrate
+### Criando as tabelas pelos migrate
 ~~~bash
- php artisan migrate:rollback
+sudo php artisan make:model OrdemProducao --migration
+sudo php artisan make:model User --migration
+sudo php artisan make:model  Product --migration
+php artisan migrate:status
+php artisan migrate:rollback
 ~~~
 Apaguei todas tabelas, depois ...
 ~~~bash
