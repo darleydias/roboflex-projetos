@@ -1431,7 +1431,7 @@ Salve
 Dentro de /media/darley/Dev/cadeia
 ----------------------------------
 Cria o módulo com a migration
-php artisan make:model Caso -m
+php artisan make:model Caso --migration
 
 Editando o arquivo de migrations:
 --------------------------------
