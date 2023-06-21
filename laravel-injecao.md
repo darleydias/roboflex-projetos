@@ -17,3 +17,15 @@ Apaguei todas tabelas, depois ...
 ~~~bash
  sudo php artisan migrate
 ~~~
+### Crio os fillables nos models
+
+$fillable =['dtStart','dtEnd','codProd','numOp','quant','obs'];
+
+
+### Crio os controllers
+~~~bash
+sudo php artisan make:controller productController
+sudo php artisan make:controller OrdemProducaoController
+
+~~~
+
