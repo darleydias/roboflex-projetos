@@ -319,7 +319,16 @@ DB_PASSWORD=pass
 # COMANDOS GIT
 ##############################################
 
-### git add index.html package.json package-lock.json README.md webpack.config.js src/
+~~~bash
+git init 
+
+git add index.html package.json package-lock.json README.md webpack.config.js src/
+
+git add .
+
+git config --global user.email "darlley@gmail.com"
+
+git config --global user.name "darleydias"
 
 git status
 
@@ -329,13 +338,10 @@ sudo git remote -v
 
 sudo git branch -M main
 
-sudo git branch -M main
-
 sudo git remote add origin https://github.com/darleydias/cadeia.git
 
-
 sudo git push -u origin main
-
+~~~
 ##############################################
 # DOCKER
 ##############################################
