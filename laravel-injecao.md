@@ -24,8 +24,8 @@ $fillable =['dtStart','dtEnd','codProd','numOp','quant','obs'];
 
 ### Crio os controllers
 ~~~bash
-sudo php artisan make:controller productController
-sudo php artisan make:controller OrdemProducaoController
+sudo php artisan make:controller productController --api
+sudo php artisan make:controller OrdemProducaoController --api
 
 ~~~
 
