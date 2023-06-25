@@ -28,4 +28,8 @@ sudo php artisan make:controller productController --api
 sudo php artisan make:controller OrdemProducaoController --api
 
 ~~~
+### Pesquisando rotas
+~~~bash
+sudo php artisan route:list
+~~~
 
