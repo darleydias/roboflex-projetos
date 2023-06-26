@@ -33,3 +33,10 @@ sudo php artisan make:controller OrdemProducaoController --api
 sudo php artisan route:list
 ~~~
 
+### Implementando token com sanctum
+
+sudo php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+sudo php artisan make:controller AuthController
+
+ 
+
