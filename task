@@ -156,7 +156,94 @@ Desenvolvimento programa de integração APIs Omie com SGI - Entidade Cliente
 16-06 2023
 -------------
 Reunião de Daily equipe de TI (01 hora)
+
+
+
+19-06 2023
+-------------
+Reunião de Daily equipe de TI (01 hora)
+
+
+20-06 2023
+-------------
+Reunião de Daily equipe de TI (01 hora)
+
+
+21-06 2023
+-------------
+Reunião de Daily equipe de TI (01 hora)
+
+
+22-06 2023
+-------------
+Reunião de Daily equipe de TI (01 hora)
+
+
+23-06 2023
+-------------
+Reunião de Daily equipe de TI (01 hora)
+
+
+
+26-06 2023
+-------------
+Reunião de Daily equipe de TI (01 hora)
+Mentoria desenvolvimento back-end
+
+27-06 2023
+-------------
+Reunião de Daily equipe de TI (01 hora)
 Continuação do desenvolvimento da entidede cliente da integração
+
+
+
+PORTFÓLIO
+----------
+
+1) Evolução SGI - Injeção  - Apontamento. Versão responsiva Tablet
+2) Evolução SGI - Injeção  - Painel de controle
+3) Evolução SGI - Rotinas Testes - Apontamento. Versão responsiva Tablet
+4) Evolução SGI - Rotinas de comunicação interna 
+5) Desenvolvimento SGI II - 
+5.1 Desenvolvimento back-end tecnologias atualizadas
+5.2 Desenvolvimento front-end tecnologias atualizadas
+5.3 Desenvolvimento aplicativo android Roboflex. 
+5.3.1 Login/Estrutura/menus
+5.3.2 Calendário de planejamento de produção
+5.3.3 Rotinas de controle de Injeção  
+6) Reestruturação de sitemas: 
+6.1 Criação de ambiente de desenvolvimento
+6.1.1 Criação de servidor de desenvolivimento e homologação
+6.1.2 Criação de repositório de cógigos e rotinas de controle de versão;
+6.1.3 Qualificação para desenvolvimento back-end
+6.1.4 Qualificação para desenvolvimento Android
+6.1.5 Qualificação para desenvolvimento front-end
+6.2 Desenvolvimento Servidor de Aplicação e bancos para produção
+6.3 Desenvolvimento Servidor para replicação
+6.4 Elaboração de documentação de banco de dados:
+6.4.1 Diagrama Banco do SGI antigo
+6.4.2 Diagrama Banco Injeção
+6.4.3 Diagrama Banco de Rotinas de Testes
+6.4.4 Diagrama Banco de permisoes
+6.4.5 Diagrama Banco de estrutura organizacional
+6.4.6 Diagrama de Calendário de planejamento de Produção;
+6) Desenvolvimento de sistema para integração com Omie;
+6) Sistema de acesso com catraca
+6.1 Desenvolvimentod de placa controladora;
+6.2 Desenvolvimento de sistema (API)
+7) Sistema de transporte de material para linha;
+7.1 Provas de conceito
+7.1.1 Controle de motores e chassi;
+7.1.2 Sensores de reflexo;
+7.1.3 Banlanca móvel;
+7.1.4 Balança fixa;
+7.1.5 Contorno de obstáculos;
+7.1.5 Sistema de wifi;
+7.1.6 Sitema de API para log;
+7.1.7 Sistema de gerenciamento; 
+
+
+
 
 
 
