@@ -33,9 +33,7 @@ service nginx restart
 nano /etc/nginx/sites-available/default
 
 ~~~bash
-max_execution_time = 300
-memory_limit = 256M
-post_max_size = 32Mserver {
+server {
         listen 80 default_server;
         listen [::]:80 default_server;
         # modsecurity on;
