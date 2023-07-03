@@ -316,8 +316,36 @@ DB_PASSWORD=pass
 ######################################
 # COMANDOS GIT
 ##############################################
+Criando repositorio local
 
 ~~~bash
+…or create a new repository on the command line
+echo "# roboflex-sgi" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/darleydias/roboflex-sgi.git
+git push -u origin main
+~~~
+mudando o repositório remoto
+
+~~~bash
+git remote set-url origin  https://github.com/darleydias/roboflex-sgi.git
+~~~
+
+Criando nova branch
+~~~bash
+git checkout -b primeiraBranch
+~~~
+mudando branch
+~~~bash
+git checkout primeiraBranch
+~~~
+
+
+
+
 git init 
 
 git add index.html package.json package-lock.json README.md webpack.config.js src/
