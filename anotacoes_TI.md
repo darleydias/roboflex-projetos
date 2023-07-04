@@ -343,6 +343,23 @@ mudando branch
 git checkout primeiraBranch
 ~~~
 
+alternando entre brach
+   ~~~bash
+   git checkout -b configuracoes
+   git branch
+   git checkout main
+   git branch
+   git checkout configuracoes
+   git branch
+   ~~~
+   
+   subindo codigo para uma branch
+   
+   ~~~bash
+   git add .
+   git commit -m "configurações"
+   git push origin configuracoes
+   ~~~
 
 
 
