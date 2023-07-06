@@ -2,6 +2,42 @@
 
 194.163.44.230
 
+Orientação : 
+https://www.google.com/search?q=deply+laravel+deployer&oq=deply+laravel+deployer&aqs=chrome..69i57.8707j0j4&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f6e00985,vid:kx7imsZu7is
+
+####  Instalar o deployer:
+
+curl -LO https://deployer.org/deployer.phar
+mv deployer.phar /usr/local/bin/dep
+chmod +x /usr/local/bin/dep
+dep init -t Laravel
+sudo nano deploy.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### Acessando roteiro de instalação do ambiente
 http://github.com/teddysun/lamp
 
