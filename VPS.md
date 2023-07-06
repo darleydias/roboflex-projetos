@@ -5,13 +5,15 @@
 Orientação : 
 https://www.google.com/search?q=deply+laravel+deployer&oq=deply+laravel+deployer&aqs=chrome..69i57.8707j0j4&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f6e00985,vid:kx7imsZu7is
 
-####  Instalar o deployer:
+####  Instalar o deployer no desenvolvimento  :
 
 curl -LO https://deployer.org/deployer.phar
 mv deployer.phar /usr/local/bin/dep
 chmod +x /usr/local/bin/dep
 dep init -t Laravel
 sudo nano deploy.php
+
+dep deploy
 
 
 
