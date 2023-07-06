@@ -79,8 +79,11 @@ sudo mysql_secure_installation
 ## CRIANDO USUARIO
 
 sudo mysql
-grant all privileges on . to 'roboflex'@'%' identified by 'Roboflex()123';
+
+grant all privileges on *.* to 'roboflex'@'%' identified by 'Roboflex()123';
+
 flush privileges;
+
 exit
 
 ## CONFIGURANDO ACESSO REMOTO 
