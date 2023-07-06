@@ -1,4 +1,4 @@
-### Servidor
+### Servidor - Deploy Laravel
 
 194.163.44.230
 
@@ -32,7 +32,9 @@ PHP: php-8.1.20
 PHP Location: /usr/local/php
 PHP Additional Extensions:
 xdebug-3.1.6
-
+~~~bash
 Document root /data/www/default
+~~~
+
 
 
