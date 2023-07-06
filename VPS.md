@@ -9,8 +9,8 @@ http://github.com/teddysun/lamp
 apt-get -y install wget git
 git clone https://github.com/teddysun/lamp.git
   cd lamp
-chmod 755 *.sh
-./lamp.sh
+  chmod 755 *.sh
+  ./lamp.sh
 ~~~
 #### Configurações 
 
@@ -35,6 +35,15 @@ xdebug-3.1.6
 ~~~bash
 Document root /data/www/default
 ~~~
+#### Instalar o Laravel
 
+Necessário ajustar no php.ini -> retirar os modulos proc_open: nano /usr/local/php/etc/php.ini:
+remover:
+~~~bash
+disable_functions= remover -> (proc_open,proc_get_status) 
+~~~
+wget http://getcomposer.org/installer
+php installer
+php composer.phar create-project --prefer-dist laravel/laravel acesso
 
 
