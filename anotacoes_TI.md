@@ -336,7 +336,10 @@ mudando o repositório remoto
 ~~~bash
 git remote set-url origin  https://github.com/darleydias/roboflex-sgi.git
 ~~~
-
+Clonando uma branch
+~~~bash
+git clone -b acrescentaIno --single-branch https://github.com/darleydias/acesso.git
+---
 Criando nova branch
 ~~~bash
 git checkout -b primeiraBranch
