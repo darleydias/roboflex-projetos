@@ -63,5 +63,9 @@ Startar a aplicação
 ~~~bash
 var/www/html/current
 php artisan serve --host 194.163.44.230
-
 ~~~
+Exemplo Chamando URL da API no postman:
+
+194.163.44.230:8000/api/local/
+
+
