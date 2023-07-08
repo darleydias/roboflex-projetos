@@ -38,6 +38,13 @@ host('root@194.163.44.230')
 .
 .
 ~~~
+Atualizar github
+~~~bash
+sudo git add .
+sudo git commit -m "testeProducao"
+sudo git remote set-url origin  https://github.com/darleydias/acesso.git
+sudo git push -u origin master
+~~~
 
 Executar comando  deploy (na máquina  dev)
 ~~~bash
