@@ -32,6 +32,13 @@ sudo php artisan make:controller OrdemProducaoController --api
 ~~~bash
 sudo php artisan route:list
 ~~~
+Quando corrigimos erros no arquivo de rota temos que matar o cache
+~~~bash
+ sudo php artisan cache:clear
+ sudo php artisan route:cache
+ sudo php artisan route:list
+~~~
+
 
 ### Implementando token com sanctum
 
