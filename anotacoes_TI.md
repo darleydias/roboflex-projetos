@@ -80,7 +80,7 @@ sudo mysql_secure_installation
 
 sudo mysql
 
-grant all privileges on **.** to 'roboflex'@'%' identified by 'Roboflex()123';
+grant all privileges on \*.\* to 'roboflex'@'%' identified by 'Roboflex()123';
 
 flush privileges;
 
